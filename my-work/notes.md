@@ -10,3 +10,7 @@
 - [x] Phase 0 / 05 Jupyter notebooks
   - % = line magic (same line only), %% = cell magic (whole cell, first line)
   - list comp 6.4 ms vs np.random.rand 0.62 ms (~10x); Restart & Run All before sharing
+- [x] Phase 0 / 06 Python environments
+  - activate = put .venv/bin first on PATH; check with `which python`
+  - torch on Linux via pyproject: [[tool.uv.index]] CPU url + [tool.uv.sources] (template in my-work/templates)
+  - 3 declared deps -> 31 locked (transitive). Never `sudo pip install`

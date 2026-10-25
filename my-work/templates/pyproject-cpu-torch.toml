@@ -1,0 +1,18 @@
+[project]
+name = "torch-claude"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "anthropic",
+    "numpy>=2.4.6",
+]
+
+# Get torch from PyTorch's CPU-only index instead of the default (CUDA) one
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]

@@ -14,3 +14,8 @@
   - activate = put .venv/bin first on PATH; check with `which python`
   - torch on Linux via pyproject: [[tool.uv.index]] CPU url + [tool.uv.sources] (template in my-work/templates)
   - 3 declared deps -> 31 locked (transitive). Never `sudo pip install`
+- [x] Phase 0 / 07 Docker for AI (CPU version: my-work/docker/)
+  - python:3.12-slim + CPU torch = 1.69 GB (vs ~10 GB+ CUDA devel image)
+  - Layer cache: big/stable installs first, code last. Flask needs host=0.0.0.0 in a container
+  - Compose: services reach each other by name on the compose network; laptop uses mapped ports
+  - Compose searches parent dirs for a file -> use -f to be explicit. `down -v` deletes volumes

@@ -1,0 +1,4 @@
+machine,device,seconds
+ThinkPad i5-8350U,CPU,0.75
+Colab free,CPU,1.785
+Colab T4,GPU fp32,0.088

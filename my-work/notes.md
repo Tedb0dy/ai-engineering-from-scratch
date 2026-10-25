@@ -7,3 +7,6 @@
 - [x] Phase 0 / 04 APIs & keys
   - Key in .env (git-ignored, line 31). Load with: set -a; source .env; set +a
   - stop_reason: end_turn = finished, max_tokens = cut off. 401 = bad key, 429 = rate limited
+- [x] Phase 0 / 05 Jupyter notebooks
+  - % = line magic (same line only), %% = cell magic (whole cell, first line)
+  - list comp 6.4 ms vs np.random.rand 0.62 ms (~10x); Restart & Run All before sharing

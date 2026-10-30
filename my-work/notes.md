@@ -19,3 +19,6 @@
   - Layer cache: big/stable installs first, code last. Flask needs host=0.0.0.0 in a container
   - Compose: services reach each other by name on the compose network; laptop uses mapped ports
   - Compose searches parent dirs for a file -> use -f to be explicit. `down -v` deletes volumes
+- [x] Phase 0 / 08 Editor setup
+  - Project-level settings in .vscode/ (git-ignored, line 43). Interpreter: ./.venv/bin/python
+  - Black = style (auto-fixed on save). Ruff/Pylance = possible bugs (I decide). Files need .py to be analysed

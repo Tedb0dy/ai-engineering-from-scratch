@@ -22,3 +22,8 @@
 - [x] Phase 0 / 08 Editor setup
   - Project-level settings in .vscode/ (git-ignored, line 43). Interpreter: ./.venv/bin/python
   - Black = style (auto-fixed on save). Ruff/Pylance = possible bugs (I decide). Files need .py to be analysed
+- [x] Phase 0 / 09 Data management
+  - HF datasets: load_dataset(name, config); cache ~/.cache/huggingface; streaming=True for huge sets
+  - MRPC label 1 = paraphrase; spotted label noise (example 5). Data is messy: look at it first
+  - IMDB: CSV 33.3 MB vs Parquet 20.5 MB (1.6x, text compresses poorly). 70/15/15 split, seed=42
+  - Identical "timed" benchmark results = suspect the measurement (chunked downloads)

@@ -27,3 +27,8 @@
   - MRPC label 1 = paraphrase; spotted label noise (example 5). Data is messy: look at it first
   - IMDB: CSV 33.3 MB vs Parquet 20.5 MB (1.6x, text compresses poorly). 70/15/15 split, seed=42
   - Identical "timed" benchmark results = suspect the measurement (chunked downloads)
+- [x] Phase 0 / 10 Terminal & shell
+  - grep | awk '{print $NF}' | wc -l ; awk '$4 < 0.02 {print $2}' filters+prints. > overwrite, >> append, 2>&1 stderr too
+  - tmux new -s X / Ctrl+B " % arrows d / tmux attach -t X. Jobs survive closing the window
+  - Course aliases sourced in ~/.bashrc (ae, memhogs, bigfiles). ps: RSS (KB) = real RAM, ignore VSZ
+  - ~/.ssh/config Host practice-gpu (localhost) as a template; ssh -G to check

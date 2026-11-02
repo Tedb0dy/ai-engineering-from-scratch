@@ -32,3 +32,7 @@
   - tmux new -s X / Ctrl+B " % arrows d / tmux attach -t X. Jobs survive closing the window
   - Course aliases sourced in ~/.bashrc (ae, memhogs, bigfiles). ps: RSS (KB) = real RAM, ignore VSZ
   - ~/.ssh/config Host practice-gpu (localhost) as a template; ssh -G to check
+- [x] Phase 0 / 11 Linux for AI
+  - Permission denied -> chmod +x. rwx = 4/2/1 (755 scripts, 644 files, 600 secrets). Shebang picks the interpreter
+  - Disk: 117 GB, 30 GB free. df = whole disk, du -sh X/* | sort -h = folders. Don't prune docker volumes blindly
+  - systemctl: enabled = at boot, active = now. rsync re-run sent 108 B vs 53.85 MB (skips unchanged)
